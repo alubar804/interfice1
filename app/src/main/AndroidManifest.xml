@@ -8,14 +8,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Interfice1">
+        android:theme="@style/Theme.Custom1">
         <activity
             android:name=".NewPlayer"
-            android:exported="true" />
-
-
-
-
+            android:exported="true"
+            android:theme="@style/Theme.Custom2"/>
 
         <activity
             android:name=".MainActivity"
