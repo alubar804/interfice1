@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toolbar
 import androidx.core.content.res.ResourcesCompat
 
 
@@ -15,7 +16,8 @@ class MainActivity : AppCompatActivity() {
         val titulo = findViewById<TextView>(R.id.titulo)
 
         titulo.typeface = ResourcesCompat.getFont(this, R.font.courgetteregular)
-
+        val toolbar=findViewById(R.id.toolbar) as androidx.appcompat.widget.Toolbar
+        setSupportActionBar(toolbar)
         val jugador = findViewById(R.id.button2) as Button
 
         jugador.setOnClickListener{lanzarNewPlayer()}

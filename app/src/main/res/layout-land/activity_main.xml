@@ -9,14 +9,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginLeft="20dp"
-    android:layout_marginRight="20dp"
-    android:layout_marginTop="10dp"
+
     android:layout_marginBottom="10dp"
-    android:stretchColumns="0,1"
+    android:stretchColumns="*"
 
     >
 
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+    </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
@@ -30,13 +42,15 @@
             android:layout_marginTop="40dp"
             android:layout_span="2"
             android:gravity="center"
-            android:text="Play Juegos"
+            android:text="@string/play_juegos"
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
 
         <Button
             android:id="@+id/button1"
@@ -45,7 +59,8 @@
             android:layout_marginTop="50dp"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
-            android:text="Play" />
+            android:text="@string/play"
+            android:gravity="center"/>
 
         <Button
             android:id="@+id/button3"
@@ -54,30 +69,35 @@
             android:layout_marginTop="50dp"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
-            android:text="Preferencies" />
+            android:text="@string/preferencies"
+            android:gravity="center"/>
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
-            android:text="New Player" />
+            android:text="@string/new_player"
+            android:gravity="center"/>
 
         <Button
             android:id="@+id/button4"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
-            android:text="about" />
+            android:text="@string/about"
+            android:gravity="center"/>
     </TableRow>
 
 </TableLayout>

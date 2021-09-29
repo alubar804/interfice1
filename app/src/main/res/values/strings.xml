@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">interfice1</string>
+    <string name="about">About</string>
+    <string name="new_player">New Player</string>
+    <string name="preferencies">Preferencies</string>
+    <string name="play">Play</string>
+    <string name="play_juegos">Play Juegos</string>
 </resources>
