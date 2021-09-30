@@ -7,7 +7,8 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toolbar
+import androidx.appcompat.widget.Toolbar
+
 import androidx.core.content.res.ResourcesCompat
 
 
@@ -18,13 +19,14 @@ class MainActivity : AppCompatActivity() {
         val titulo = findViewById<TextView>(R.id.titulo)
 
         titulo.typeface = ResourcesCompat.getFont(this, R.font.courgetteregular)
-        val toolbar=findViewById(R.id.toolbar) as androidx.appcompat.widget.Toolbar
-        setSupportActionBar(toolbar)
+
         val tooolbar = findViewById(R.id.toolbar) as Toolbar
         setSupportActionBar(tooolbar)
         val jugador = findViewById(R.id.button2) as Button
 
         jugador.setOnClickListener{lanzarNewPlayer()}
+
+
 
     }
 
@@ -32,17 +34,23 @@ class MainActivity : AppCompatActivity() {
         val i = Intent(this,NewPlayer::class.java)
         startActivity(i)
     }
-//    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-//        menuInflater.inflate(R.menu.menu_main, menu)
-//        return true
-//    }
-//
-//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-//        when (item.getItemId()) {
-//            (R.id.action_search) -> {return true}
-//            (R.id.action_add) -> {return true}
-//            else -> {return super.onOptionsItemSelected(item)} }
-//    }
+    private fun lanzarGeneros (){
+        val i = Intent(this,Generos::class.java)
+        startActivity(i)
+    }
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu1, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            (R.id.action_search) -> {return true}
+            (R.id.action_add) -> {return true}
+            (R.id.action_settings) ->{lanzarGeneros()
+                return true}
+            else -> {return super.onOptionsItemSelected(item)} }
+    }
 
 
 

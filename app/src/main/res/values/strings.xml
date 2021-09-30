@@ -5,4 +5,8 @@
     <string name="preferencies">Preferencies</string>
     <string name="play">Play</string>
     <string name="play_juegos">Play Juegos</string>
+    <string name="action_settings">Generos</string>
+    <string name="action_search">Busqueda</string>
+    <string name="action_add">Añadir</string>
+
 </resources>

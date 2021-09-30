@@ -10,10 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Custom1">
         <activity
+            android:name=".Generos"
+            android:exported="true" />
+        <activity
             android:name=".NewPlayer"
             android:exported="true"
-            android:theme="@style/Theme.Custom2"/>
-
+            android:theme="@style/Theme.Custom2" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
