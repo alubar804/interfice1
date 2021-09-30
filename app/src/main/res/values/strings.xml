@@ -8,5 +8,6 @@
     <string name="action_settings">Generos</string>
     <string name="action_search">Busqueda</string>
     <string name="action_add">Añadir</string>
+    <string name="phonetic_name">Phonetic Name</string>
 
 </resources>

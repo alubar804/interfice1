@@ -23,50 +23,74 @@
         <ImageView
             android:id="@+id/imagePerson"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             app:srcCompat="@android:drawable/ic_menu_myplaces" />
 
-        <EditText
-            android:id="@+id/Name"
-            android:layout_width="wrap_content"
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_span="2"
-            android:ems="10"
-            android:hint="Name"
-            android:inputType="textPersonName"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:layout_span="2">
+
+
+            <EditText
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <EditText
-            android:id="@+id/PhoneticName"
-            android:layout_width="wrap_content"
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_column="1"
-            android:layout_span="2"
-            android:ems="10"
-            android:hint="Phonetic Name"
-            android:inputType="textPersonName"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:layout_span="2">
+
+            <EditText
+                android:id="@+id/PhoneticName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:ems="10"
+                android:hint="@string/phonetic_name"
+                android:inputType="textPersonName"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <EditText
-            android:id="@+id/NickName"
-            android:layout_width="wrap_content"
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_column="1"
-            android:layout_span="2"
-            android:ems="10"
-            android:hint="NickName"
-            android:inputType="textPersonName"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:layout_span="2">
+
+            <EditText
+                android:id="@+id/NickName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:ems="10"
+                android:hint="NickName"
+                android:inputType="textPersonName"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
     </TableRow>
 
     <TableRow
@@ -76,7 +100,7 @@
         <ImageView
             android:id="@+id/cammeraImage"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             app:srcCompat="@android:drawable/ic_menu_camera" />
 
         <ImageView
@@ -130,21 +154,29 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <ImageView
             android:id="@+id/imageEMail"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             app:srcCompat="@android:drawable/ic_dialog_email" />
 
-        <EditText
-            android:id="@+id/EMail"
-            android:layout_width="wrap_content"
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_span="2"
-            android:ems="10"
-            android:hint="EMail"
-            android:inputType="textEmailAddress"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:layout_span="2">
+
+            <EditText
+                android:id="@+id/EMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:ems="10"
+                android:hint="EMail"
+                android:inputType="textEmailAddress"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
     </TableRow>
 
 </TableLayout>
