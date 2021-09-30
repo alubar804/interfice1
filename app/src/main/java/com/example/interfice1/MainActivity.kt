@@ -22,10 +22,13 @@ class MainActivity : AppCompatActivity() {
 
         val tooolbar = findViewById(R.id.toolbar) as Toolbar
         setSupportActionBar(tooolbar)
-        val jugador = findViewById(R.id.button2) as Button
 
+        val jugador = findViewById(R.id.button2) as Button
         jugador.setOnClickListener{lanzarNewPlayer()}
 
+        val prefer = findViewById(R.id.button3) as Button
+
+        prefer.setOnClickListener{lanzarPreferences()}
 
 
     }
@@ -36,6 +39,10 @@ class MainActivity : AppCompatActivity() {
     }
     private fun lanzarGeneros (){
         val i = Intent(this,Generos::class.java)
+        startActivity(i)
+    }
+    private fun lanzarPreferences (){
+        val i = Intent(this,Preferences::class.java)
         startActivity(i)
     }
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
