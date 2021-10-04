@@ -27,8 +27,10 @@ class MainActivity : AppCompatActivity() {
         jugador.setOnClickListener{lanzarNewPlayer()}
 
         val prefer = findViewById(R.id.button3) as Button
-
         prefer.setOnClickListener{lanzarPreferences()}
+
+        val jugar = findViewById(R.id.button1) as Button
+        jugar.setOnClickListener{lanzarGames()}
 
 
     }
@@ -39,6 +41,10 @@ class MainActivity : AppCompatActivity() {
     }
     private fun lanzarGeneros (){
         val i = Intent(this,Generos::class.java)
+        startActivity(i)
+    }
+    private fun lanzarGames (){
+        val i = Intent(this,Games::class.java)
         startActivity(i)
     }
     private fun lanzarPreferences (){
