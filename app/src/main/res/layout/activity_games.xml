@@ -75,7 +75,7 @@
         android:id="@+id/checkBox4"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:text="Juego3"
+        android:text="Juego4"
         app:layout_constraintBottom_toBottomOf="@+id/imageView4"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:layout_constraintTop_toTopOf="@+id/imageView4" />

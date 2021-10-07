@@ -30,33 +30,48 @@
             android:text="Play Juegos"
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
-        <Button
-                android:id="@+id/button1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="52dp"
-                android:text="Play" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:cornerRadius="20dp"
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:text="Play" />
 
-        <Button
-                android:id="@+id/button2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
-                android:text="New Player" />
+        <com.google.android.material.button.MaterialButton
 
-        <Button
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:cornerRadius="20dp"
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="New Player" />
+
+        <com.google.android.material.button.MaterialButton
+
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:cornerRadius="20dp"
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:text="Preferencies" />
 
-        <Button
-                android:id="@+id/button4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
-                android:text="about" />
+        <com.google.android.material.button.MaterialButton
+
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:cornerRadius="20dp"
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="about" />
         </LinearLayout>
 
 </LinearLayout>
