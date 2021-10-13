@@ -1,14 +1,15 @@
 package com.example.interfice1
 
+
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-
-class Textoides(val cadena: Int)
-class TextAdapter(var items: ArrayList<Textoides>) : RecyclerView.Adapter<TextAdapter.TarjViewHolder>() {
+class Usuarios(val cadena: Int, val cadena2:Int)
+class UserAdapter(var items: ArrayList<Usuarios>) : RecyclerView.Adapter<UserAdapter.TarjViewHolder>() {
     lateinit var onClick : (View) -> Unit
 
     init {
@@ -18,19 +19,22 @@ class TextAdapter(var items: ArrayList<Textoides>) : RecyclerView.Adapter<TextAd
     class TarjViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         private var texto: TextView
+        private var subTexto: TextView
 
         init {
-            texto = itemView.findViewById(R.id.TextView)
+            texto = itemView.findViewById(R.id.username)
+            subTexto=itemView.findViewById(R.id.UserYear)
         }
 
-        fun bindTarjeta(t: Textoides, onClick: (View) -> Unit) = with(itemView) {
+        fun bindTarjeta(t: Usuarios, onClick: (View) -> Unit) = with(itemView) {
             texto.setText(t.cadena)
+            subTexto.setText(t.cadena2)
             setOnClickListener { onClick(itemView) }
         }
     }
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): TarjViewHolder {
-        val itemView = LayoutInflater.from(viewGroup.context).inflate(R.layout.generoos, viewGroup, false)
+        val itemView = LayoutInflater.from(viewGroup.context).inflate(R.layout.users, viewGroup, false)
         return TarjViewHolder(itemView)
     }
 

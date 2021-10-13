@@ -15,5 +15,18 @@
     <string name="fantasia">Fantasia</string>
     <string name="ciencia_ficcion">Ciencia-Ficcion</string>
     <string name="plataformas">Plataformas</string>
+    <string name="name1">Alvaro</string>
+    <string name="name2">Maria</string>
+    <string name="name3">Marcos</string>
+    <string name="name4">Juan</string>
+    <string name="name5">Carlos</string>
+    <string name="name6">Manolo</string>
+    <string name="year1">1999</string>
+    <string name="year2">555</string>
+    <string name="year3">7435</string>
+    <string name="year4">23</string>
+    <string name="year5">2021</string>
+    <string name="year6">345</string>
+
 
 </resources>

@@ -20,17 +20,19 @@ class MainActivity : AppCompatActivity() {
 
         titulo.typeface = ResourcesCompat.getFont(this, R.font.courgetteregular)
 
-        val tooolbar = findViewById(R.id.toolbar) as Toolbar
+        val tooolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(tooolbar)
+        val jugar = findViewById<Button>(R.id.button1)
+        jugar.setOnClickListener{lanzarGames()}
 
-        val jugador = findViewById(R.id.button2) as Button
+        val jugador = findViewById<Button>(R.id.button2)
         jugador.setOnClickListener{lanzarNewPlayer()}
 
-        val prefer = findViewById(R.id.button3) as Button
+        val prefer = findViewById<Button>(R.id.button3)
         prefer.setOnClickListener{lanzarPreferences()}
 
-        val jugar = findViewById(R.id.button1) as Button
-        jugar.setOnClickListener{lanzarGames()}
+        val about = findViewById<Button>(R.id.button4)
+        about.setOnClickListener{lanzarAbout()}
 
 
     }
@@ -49,6 +51,10 @@ class MainActivity : AppCompatActivity() {
     }
     private fun lanzarPreferences (){
         val i = Intent(this,Preferences::class.java)
+        startActivity(i)
+    }
+    private fun lanzarAbout(){
+        val i = Intent(this,About::class.java)
         startActivity(i)
     }
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
