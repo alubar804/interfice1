@@ -9,5 +9,11 @@
     <string name="action_search">Busqueda</string>
     <string name="action_add">Añadir</string>
     <string name="phonetic_name">Phonetic Name</string>
+    <string name="generos">Generos :</string>
+    <string name="accion">Accion</string>
+    <string name="aventura">Aventura</string>
+    <string name="fantasia">Fantasia</string>
+    <string name="ciencia_ficcion">Ciencia-Ficcion</string>
+    <string name="plataformas">Plataformas</string>
 
 </resources>
