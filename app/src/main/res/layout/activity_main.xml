@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:gravity="center"
-            android:text="Play Juegos"
+            android:text="@string/play_juegos"
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <com.google.android.material.button.MaterialButton
@@ -38,7 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="52dp"
-            android:text="Play" />
+            android:text="@string/play" />
 
         <com.google.android.material.button.MaterialButton
 
@@ -49,7 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:text="New Player" />
+            android:text="@string/new_player" />
 
         <com.google.android.material.button.MaterialButton
 
@@ -60,7 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:text="Preferencies" />
+            android:text="@string/preferencies" />
 
         <com.google.android.material.button.MaterialButton
 
@@ -71,7 +71,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:text="about" />
+            android:text="@string/about" />
         </LinearLayout>
 
 </LinearLayout>

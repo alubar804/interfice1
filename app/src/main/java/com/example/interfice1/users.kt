@@ -5,10 +5,11 @@ package com.example.interfice1
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class Usuarios(val cadena: Int, val cadena2:Int)
+class Usuarios(val imagen:Int,val cadena: Int, val cadena2:Int)
 class UserAdapter(var items: ArrayList<Usuarios>) : RecyclerView.Adapter<UserAdapter.TarjViewHolder>() {
     lateinit var onClick : (View) -> Unit
 
@@ -17,16 +18,19 @@ class UserAdapter(var items: ArrayList<Usuarios>) : RecyclerView.Adapter<UserAda
     }
 
     class TarjViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-
+        private var laImagen: ImageView
         private var texto: TextView
         private var subTexto: TextView
 
         init {
+            laImagen=itemView.findViewById(R.id.userImage)
             texto = itemView.findViewById(R.id.username)
             subTexto=itemView.findViewById(R.id.UserYear)
+
         }
 
         fun bindTarjeta(t: Usuarios, onClick: (View) -> Unit) = with(itemView) {
+            laImagen.setImageResource(t.imagen)
             texto.setText(t.cadena)
             subTexto.setText(t.cadena2)
             setOnClickListener { onClick(itemView) }

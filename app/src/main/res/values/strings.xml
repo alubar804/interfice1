@@ -27,6 +27,8 @@
     <string name="year4">23</string>
     <string name="year5">2021</string>
     <string name="year6">345</string>
-
-
+    <string name="futbol">Futbol</string>
+    <string name="ciclismo">Ciclismo</string>
+    <string name="beisbol">Beisbol</string>
+    <string name="baloncesto">Baloncesto</string>
 </resources>
