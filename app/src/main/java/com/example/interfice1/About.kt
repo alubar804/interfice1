@@ -24,7 +24,7 @@ class About : AppCompatActivity() {
 
         val adaptador = UserAdapter(items)
         recView.adapter = adaptador
-        recView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        recView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false,)
         adaptador.onClick = {
             Toast.makeText(this, ""+ resources.getString(items[recView.getChildAdapterPosition(it)].cadena), Toast.LENGTH_LONG).show()
         }
